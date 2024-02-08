@@ -8,14 +8,16 @@ import profile from "../../../public/images/profile.png"
 import { Button } from "./UI/Button";
 import { NavItem } from "./UI/NavItem";
 import { BurgerIcon } from "./Icons/burger";
+import { useState } from "react";
 
 export function Header() {
     const nav = ["Home", "Blog", "Gifts"]
+
     return (
-        <header className="flex justify-between mt-4 mb-16">    
+        <header className="flex justify-between mt-4 mb-16 min-w-[340px]">    
             <div className="flex items-center">
-                <span className="md:hidden mx-2 cursor-pointer">
-                    <BurgerIcon />
+                <span className="md:hidden mx-2 cursor-pointer" >
+                    <BurgerIcon  />
                 </span>
                 <a href="#" className="">
                     <LogoIcon />
@@ -36,7 +38,7 @@ export function Header() {
                 <span className="cursor-pointer">
                     <NotificationIcon />
                 </span>
-                <figure className="w-10 rounded-full overflow-hidden ">
+                <figure className="w-10 max-[380px]:w-7 rounded-full overflow-hidden ">
                     <Image 
                         src={profile}
                         alt="User Avatar"
@@ -59,6 +61,7 @@ export function Header() {
         </header>
     )
 }
+
 
 
 

@@ -1,21 +1,21 @@
 import { IconProps } from "@/app/types/staticPage.types";
 
 export function HeartIcon({ w, h, f, s }: IconProps) {
-  const height = h ? h : "18";
-  const width = w ? w : "19";
+  const height = h ? h : "40";
+  const width = w ? w : "40";
   const fill = f ? f : "white";
-  const stroke = s ? s : "#292D32"
+  const stroke = s ? s : "#292D32";
   return (
     <svg
-      width={width}
-      height={height}
-      viewBox={`0 0 ${width} ${height}`}
-      fill="none"
+    width={width}
+    height={height}
+    viewBox={`0 0 ${width} ${height}`}
+      fill={fill}
       xmlns="http://www.w3.org/2000/svg"
     >
+      <rect width="40" height="40" rx="20" fill="white" />
       <path
-        d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.69C1 3.6 3.49 1.1 6.56 1.1C8.38 1.1 9.99 1.98 11 3.34C12.01 1.98 13.63 1.1 15.44 1.1C18.51 1.1 21 3.6 21 6.69C21 13.69 14.52 17.82 11.62 18.81Z"
-        fill={fill}
+        d="M20.62 28.81C20.28 28.93 19.72 28.93 19.38 28.81C16.48 27.82 10 23.69 10 16.69C10 13.6 12.49 11.1 15.56 11.1C17.38 11.1 18.99 11.98 20 13.34C21.01 11.98 22.63 11.1 24.44 11.1C27.51 11.1 30 13.6 30 16.69C30 23.69 23.52 27.82 20.62 28.81Z"
         stroke={stroke}
         stroke-width="1.5"
         stroke-linecap="round"
@@ -24,4 +24,3 @@ export function HeartIcon({ w, h, f, s }: IconProps) {
     </svg>
   );
 }
-

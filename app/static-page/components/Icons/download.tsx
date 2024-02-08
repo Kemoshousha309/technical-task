@@ -1,14 +1,14 @@
 import { IconProps } from "@/app/types/staticPage.types";
 
 export function DownloadIcon({ w, h, s }: IconProps) {
-    const height = h ? h : "24";
-    const width = w ? w : "24";
-    const stroke = s ? s : "#33333"
-    return (
-      <svg
-        width={width}
-        height={height}
-        viewBox={`0 0 ${width} ${height}`}
+  const height = h ? h : "24";
+  const width = w ? w : "24";
+  const stroke = s ? s : "#33333";
+  return (
+    <svg
+      width={height}
+      height={width}
+      viewBox={`0 0 ${width} ${height}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
