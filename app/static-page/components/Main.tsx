@@ -63,7 +63,7 @@ export function Main() {
       <section id="products">
         <h2 className="mb-6 text-3xl max-sm:text-xl font-semibold flex gap-2 items-center">
           Products
-          <span className="text-sm text-gray-500 font-light">(12)</span>
+          <span className="text-sm text-gray-500 dark:text-white font-light">(12)</span>
         </h2>
         <div>
           {products.map((p, i) => {

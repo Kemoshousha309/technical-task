@@ -3,8 +3,9 @@ import { IconProps } from "@/app/types/staticPage.types";
 export function HeartIcon({ w, h, f, s }: IconProps) {
   const height = h ? h : "40";
   const width = w ? w : "40";
-  const fill = f ? f : "white";
-  const stroke = s ? s : "#292D32";
+  let fill = f ? f : "white";
+  let stroke = s ? s : "#292D32";
+
   return (
     <svg
     width={width}

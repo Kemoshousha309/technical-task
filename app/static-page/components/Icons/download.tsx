@@ -1,9 +1,15 @@
+'use client'
 import { IconProps } from "@/app/types/staticPage.types";
+import { useDarkMode } from "./useDarkMode";
 
 export function DownloadIcon({ w, h, s }: IconProps) {
   const height = h ? h : "24";
   const width = w ? w : "24";
-  const stroke = s ? s : "#33333";
+  let stroke = s ? s : "#333333";   
+  const darkMode = useDarkMode();
+  if(darkMode) {
+    stroke = "white"
+  }
   return (
     <svg
       width={height}

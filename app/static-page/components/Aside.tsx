@@ -50,7 +50,7 @@ export function Aside() {
           </figcaption>
         </figure>
 
-        <p className=" text-stone-500 text-sm max-[380px]:text-xs mb-6">
+        <p className=" text-stone-500  dark:text-white text-sm max-[380px]:text-xs mb-6">
           I am Hala Ahmed, I am the owner of the local brand called Beauty which
           is for Makeup and Skin Care.
         </p>
@@ -81,13 +81,13 @@ export function Aside() {
           </div>
         </div>
 
-        <div className="flex gap-2 bg-yellow-50 p-3 mb-4">
+        <div className="flex gap-2 bg-yellow-50 dark:bg-transparent p-3 mb-4">
           <DownloadIcon s="#ca8a04" />
           <p className="text-xs ">Download the QR code or share it with your friends.</p>
         </div>
 
         <div className="bg-gradient-to-r h-[300px] rounded-[20px] from-red-600 to-orange-500 flex items-center justify-center">
-          <div className="bg-white w-5/6 h-5/6 rounded-[20px] flex flex-col justify-center items-center ">
+          <div className="bg-white dark:text-stone-900 w-5/6 h-5/6 rounded-[20px] flex flex-col justify-center items-center ">
             <LogoIcon />
             <h2 className="text-xl font-semibold my-1">Hala Ahmed</h2>
             <figure className="flex flex-col items-center">

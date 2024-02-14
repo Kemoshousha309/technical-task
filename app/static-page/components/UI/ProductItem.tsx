@@ -20,11 +20,11 @@ export function ProductItem({imgSrc, description, price, badgeType, loved}: Prod
 
         <div className="flex flex-col justify-between py-2 ">
           <p className="max-w-full text-base max-sm:text-sm">{description}</p>
-          <span className="text-slate-500 max-sm:text-sm">
-            Starting Price<span className="text-slate-950 font-semibold ml-2 max-sm:text-base text-2xl ">{price} EGP</span>
+          <span className="text-slate-500 dark:text-white max-sm:text-sm">
+            Starting Price<span className="text-slate-950 dark:text-white font-semibold ml-2 max-sm:text-base text-2xl ">{price} EGP</span>
           </span>
           <div className="flex flex-wrap items-center gap-3 ">
-            <span className="text-slate-500 max-sm:text-sm">Lot starts in</span>
+            <span className="text-slate-500 dark:text-white max-sm:text-sm">Lot starts in</span>
             <div className="flex flex-wrap gap-3 max-sm:gap-0">
             <Badge label="Days" number={2} />
             <Badge label="Hours" number={10} />

@@ -9,7 +9,7 @@ export function NavItem({value, active}: NavItemProps) {
     }
     return (
         <li className="mx-7 relative">
-            <a href="#" className={`text-stone-500 ${activeStyle} `}>{value}</a>
+            <a href="#" className={`text-stone-500 dark:text-white ${activeStyle} `}>{value}</a>
             {active ? 
             <span className="h-1.5 w-10/12 top-9 left-1 absolute rounded-t-xl bg-rose-700 block"></span>
             : null}

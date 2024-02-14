@@ -8,7 +8,6 @@ import profile from "../../../public/images/profile.png"
 import { Button } from "./UI/Button";
 import { NavItem } from "./UI/NavItem";
 import { BurgerIcon } from "./Icons/burger";
-import { useState } from "react";
 
 export function Header() {
     const nav = ["Home", "Blog", "Gifts"]
@@ -54,7 +53,7 @@ export function Header() {
                     Add New Product
                 </Button>
 
-                <span className="flex gap-2 max-lg:hidden cursor-pointer" >
+                <span className="flex gap-2 max-lg:hidden cursor-pointer " >
                     <EarthIcon /> EN
                 </span>
            </div>
