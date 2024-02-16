@@ -59,6 +59,7 @@ export function Aside() {
           {badges.map((b) => {
             return (
               <Badge
+                key={b.label}
                 Icon={b.icon}
                 label={b.label}
                 number={b.num}
